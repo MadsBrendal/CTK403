@@ -1,0 +1,58 @@
+* {
+    background-color: royalblue;
+}
+
+#Fish {
+    max-width: 150px;
+    animation: Fish 15s linear infinite;
+    transform: rotate(225deg);
+}
+
+@keyframes Fish {
+    0% {transform: translate(300px, 250px) scale(1);}
+    10% {transform: translate(620px, 100px) scale(1.3);}
+    20% {transform: translate(427px, 152px) scale(.8);}
+    30% {transform: translate(217px, 63px) scale(1.4);}
+    40% {transform: translate(183px, 217px) scale(.5);}
+    50% {transform: translate(421px, 381px) scale(1.7);}
+    60% {transform: translate(246px, 252px) scale(2);}
+    70% {transform: translate(135px, 137px) scale(1.3);}
+    80% {transform: translate(352px, 471px) scale(.9);}
+    90% {transform: translate(281px, 343px) scale(1.6);}
+    100% {transform: translate(300px, 250px) scale(1);}
+}
+
+#TailFin {
+    animation: Tail 3s linear infinite;
+}
+
+@keyframes Tail {
+    0% {transform: rotate(0deg); transform-origin: 50% 50%;}
+    25% {transform: rotate(30deg); transform-origin: 50% 50%;}
+    50% {transform: rotate(-15deg); transform-origin: 50% 50%;}
+    100% {transform: rotate(0deg); transform-origin: 50% 50%;}
+}
+
+#FrontFin {
+    animation: FFin 3s linear infinite;
+}
+
+@keyframes FFin {
+    0% {transform: rotate(0deg); transform-origin: 50% 80%;}
+    20% {transform: rotate(20deg); transform-origin: 50% 80%;}
+    40% {transform: rotate(10deg); transform-origin: 50% 80%;}
+    60% {transform: rotate(-10deg); transform-origin: 50% 80%;}
+    80% {transform: rotate(0deg); transform-origin: 50% 80%;}
+}
+
+#BackFin {
+    animation: BFin 3s linear infinite;
+}
+
+@keyframes BFin {
+    0% {transform: rotate(0deg); transform-origin: 50% 80%;}
+    20% {transform: rotate(-20deg); transform-origin: 50% 80%;}
+    40% {transform: rotate(-10deg); transform-origin: 50% 80%;}
+    60% {transform: rotate(10deg); transform-origin: 50% 80%;}
+    80% {transform: rotate(0deg); transform-origin: 50% 80%;}
+}
