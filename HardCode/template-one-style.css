@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(to bottom right, #A0CFD3, #F7D488, #FF858D);
+    color: #424B54;
+    font-family: 'Futura', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, monospace;
+}
+
+header {
+    background-color: #424B54;
+    color: #A0CFD3;
+    padding: 8px 24px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.3em;
+}
+
+header a {
+    color: #F7D488;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-left: 12px;
+    padding: 8px 14px;
+    transition: background-color .5s;
+    transition-timing-function: ease-in;
+}
+
+header a:hover {
+    background-color: #F7D488;
+    color: #424B54;
+}
+
+p {
+    text-indent: 25px;
+}
+
+main {
+    max-width: 720px;
+    margin: 72px auto;
+}
+
+footer {
+    background-color: #424B54;
+    color: #FF858D;
+    padding: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    max-width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.one-column {
+    grid-template-columns: 1fr;
+}
+
+.two-column {
+    grid-template-columns: 1fr;
+}
+
+div {
+    box-shadow: 0 8px 16px 0 rgb(21, 60, 85);
+}
+
+#smallimg {
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 8px 16px 0 rgb(21, 60, 85);
+}
+
+@media all and (min-width: 50rem){
+    body {
+        background-image:linear-gradient(to bottom right, #3a8f97, #a07c2f, #7e1b22);
+        color:#c8ddf1;
+    }
+    #smallimg {
+        width: 400px;
+        height: 400px;
+    }
+    p {
+        text-indent: 0px;
+    }
+    .two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+  } 
+
+  @media all and (min-width: 100rem){
+    body {
+        background-image:linear-gradient(to bottom right, #fcfbb9, #f1b8ff, #b1f3ff);
+        color:#09223a;
+    }
+    #smallimg {
+        width: 500px;
+        height: 500px;
+    }
+    p {
+        text-indent: 0px;
+    }
+    .two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+    #Intro {
+        margin: 20px;
+    }
+    h1:hover {
+        color: #7e1b22;
+        transition: color .5s;
+        transition-timing-function: ease-in;
+    }
+    h2:hover {
+        color: #7e1b22;
+        transition: color .5s;
+        transition-timing-function: ease-in; 
+    }
+  } 
